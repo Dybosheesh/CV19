@@ -26,7 +26,21 @@ namespace JournalApp.ViewModels
             ////    Set(ref _Title, value);
             //}
             set => Set(ref _Title, value);
-        } 
+        }
+        #endregion
+
+        #region Status : string - Статус программы
+
+        /// <summary>Статус программы</summary>
+        private string _Status = "Готов!";
+        
+        /// <summary>Статус программы</summary>
+        public string Status 
+        { 
+            get => _Status; 
+            set => Set(ref _Status, value); 
+        }
+
         #endregion
     }
 }
